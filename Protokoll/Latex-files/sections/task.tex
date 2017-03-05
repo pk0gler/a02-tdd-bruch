@@ -1,20 +1,34 @@
 %!TEX root=../document.tex
 
 \section{Einführung}
-Diese Übung soll einen Einblick in das Themengebiet der  Stored Routines in MySQL bieten. Hierbei sollen alle bereits durchgeführten Übungen, welche mithilfe von PostgreSQL umgesetzt wurden, für MySQL umgeschrieben und angepasst werden.
+Diese Übung soll mithilfe von Jenkins einen Einblick in das umfangreiche Thema Continous Integration bieten. Hierbei wird auf einem bereits erstellten Python Programm aufgebaut und mittels Git (Github) eine automatische Testumgebung aufgebaut.
 
 \subsection{Ziele}
-Das Ziel dieser Übung ist die Umsetzung und Anpassung aller Aufgaben im Bereich Stored Routines an das DBMS MySQL
+Das Ziel dieser Übung ist die Einführung in das umfangreiche Thema Continous Integration.
 
 Zusaätzlich soll ein Protokoll erstellt werden, welches diesen Vorgang protokolliert und entsprechende Merkmale hervorhebt
 \subsection{Voraussetzungen}
 \begin{itemize}
-	\item Grundlagen von MySQL
-	\item Grundlagen von psql
-	\item Stored Routines
-	\item Grundlagen sql
+	\item Grundlagen in Python
+	\item Grundlagen Testing (Junit)
+	\item Grundlagen Continous Integration
 \end{itemize}
 
 \subsection{Aufgabenstellung}
-Unter Verwendung von MySQL sollen alle durchgeführten Übungen als stored Procedures bzw. Functions umgeschrieben werden, sodass diese die geforderte FUnktionalität sowie Anforderungen der jeweiligen Aufgabenstellung erfüllen.
+\begin{minipage}{.5\textwidth}
+	\begin{itemize}
+		\item Installiere auf deinem Rechner bzw. einer virtuellen Instanz das Continuous Integration System Jenkins
+		\item Installiere die notwendigen Plugins für Jenkins (Violations, Cobertura) und alle weiteren benötigten Plugins
+		\item Installiere Nose und Pylint (mithilfe von pip) um das Modul Bruch ausführlich zu testen
+		\item Integriere dein Bruch-Projekt in Jenkins, indem du es mit Git verbindest
+	\end{itemize}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+	\begin{itemize}
+		\item Konfiguriere Jenkins so, dass deine Unit Tests automatisch bei jedem Build durchgeführt werden
+		\item Protokolliere deine Vorgehensweise (inkl. Zeitaufwand, Konfiguration, Probleme) und die Ergebnisse (viele Screenshots!)
+		\item Schreibe fünf weitere Testfälle für die Bruch-Klasse
+		\item Können GUI-Tests mit Jenkins automatisch durchgeführt werden?
+	\end{itemize}
+\end{minipage}
 \clearpage
